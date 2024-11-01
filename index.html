@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page d'accueil</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1 class="logo-text"><span class="logo-text-primary">Are you<span class="highlight"> ready</span><span class="highlight"> ?</span></h1>
+      </div>
+      <div class="menu">
+        <div class="dropdown">
+          <button class="dropbtn" id="dropdownToggle">
+            Les situations<ion-icon name="caret-down-outline"></ion-icon>
+          </button>
+          <div class="dropdown-content" id="dropdownMenu">
+            <a href="#">Les incendies domestiques</a>
+            <a href="#">Les intrusions</a>
+            <a href="#">Les agressions physiques</a>
+            <a href="#">Les Carjacking</a>
+            <a href="#">Les accidents domestiques</a>
+            <a href="#">Perdu en forêt</a>
+            <a href="#">Pour protéger vos enfants</a>
+            <a href="#">Pour protéger vos ainés</a>
+            <a href="#">Invasion de moustiques</a>
+            <a href="#">Panne de voiture</a>
+            <a href="#">Vol d'objet, carte</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <a class="warning" href="">Nous contacter</a>
+        <a class="highlight" href="">Nos réseaux</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-text">
+        <h2><span class="hero-text-title">"Quand l'imprévu frappe, mieux vaut être préparé."</h2></span> 
+        <h2>Que ce soit une inondation soudaine, une intrusion inattendue ou un incendie, <span class="warning">chaque seconde compte !</span></h2>
+        <h2> Ici, nous sélectionnons des équipements fiables et indispensables pour vous aider à<span class="warning"> anticiper et à gérer les situations d'urgence. </span> </h2>
+      </div>
+      <div class="bottom-right-text">
+        <p><em>"Parce que les imprévus ne préviennent jamais, <span class="warning">soyez prêts !</span>"</em></p>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    const dropdownToggle = document.getElementById('dropdownToggle');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+  
+    dropdownToggle.addEventListener('click', (event) => {
+      event.stopPropagation(); // Empêche la propagation de l'événement
+      dropdownMenu.classList.toggle('show');
+    });
+  
+    // Fermer le menu si l'utilisateur clique à l'extérieur
+    window.addEventListener('click', (event) => {
+      if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+        dropdownMenu.classList.remove('show');
+      }
+    });
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+</body>
+</html>
