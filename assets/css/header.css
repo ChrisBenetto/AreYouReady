@@ -1,14 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body, html {
-    font-family: Arial, sans-serif;
-  }
-  
-  .navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,13 +22,6 @@
     color: yellow;
     word-spacing: 10px;
   }
-  .highlight {
-    color: white; /* Couleur du texte pour "ready" et "?" */
-  }
-  .warning {
-    color: yellow;
-  }
-  
   .menu {
     flex-grow: 1;
     display: flex;
@@ -99,60 +82,3 @@
     text-decoration: none;
     margin-left: 20px;
   }
-  .hero {
-    width: 100%;
-    height: 100vh;
-    background-image: url(titleimage.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: white;
-  }
-  
-  .overlay {
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 30px;
-    position: relative;
-  }
-  
-  .hero-text {
-    max-width: 600px;
-    text-align: left;
-  }
-  .hero-text-title {
-    font-size: 50px;
-  }
-  
-  .hero-text h1, .hero-text h2 {
-    margin-bottom: 30px;
-  }
-  
-  .bottom-right-text {
-    position: absolute;
-    bottom: 100px;
-    right: 250px;
-    font-size: 25px;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .hero-text h1 {
-      font-size: 24px;
-    }
-    
-    .hero-text h2 {
-      font-size: 18px;
-    }
-    
-    .bottom-right-text p {
-      font-size: 14px;
-    }
-  }
-
-
-  

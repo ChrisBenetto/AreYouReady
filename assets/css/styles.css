@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: Arial, sans-serif;
+  }
+  
+ 
+  .highlight {
+    color: white; /* Couleur du texte pour "ready" et "?" */
+  }
+  .warning {
+    color: yellow;
+  }
+  
+  
+  
+
+
+  
