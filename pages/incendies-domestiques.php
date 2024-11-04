@@ -1,6 +1,5 @@
-<?php include 'header.php' ?>
-
-  <section class="hero">
+<?php include '../partials/header.php' ?>
+<section class="hero">
     <div class="overlay">
       <div class="hero-text">
         <h2><span class="hero-text-title">"Quand l'imprévu frappe, mieux vaut être préparé."</h2></span> 
@@ -11,9 +10,6 @@
       </div>
     </div>
   </section>
-  <script src="script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  
+<?php include '../partials/footer.php'?>
 </body>
 </html> 
